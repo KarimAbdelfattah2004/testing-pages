@@ -1,13 +1,213 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pawtect</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
-</html>
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | Pawtect Pet Sanctuary</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#dbe1ff",
+                    "inverse-primary": "#b4c5ff",
+                    "on-primary-fixed": "#00174b",
+                    "tertiary": "#943700",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "on-tertiary-container": "#ffede6",
+                    "primary-container": "#2563eb",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary-container": "#eeefff",
+                    "on-secondary-fixed-variant": "#3f4759",
+                    "background": "#f7f9fb",
+                    "surface-tint": "#0053db",
+                    "error": "#ba1a1a",
+                    "on-background": "#191c1e",
+                    "surface-bright": "#f7f9fb",
+                    "surface-container-low": "#f2f4f6",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "tertiary-fixed": "#ffdbcd",
+                    "outline": "#737686",
+                    "primary": "#004ac6",
+                    "tertiary-container": "#bc4800",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "on-surface-variant": "#434655",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#dbe2fa",
+                    "surface": "#f7f9fb",
+                    "on-tertiary-fixed": "#360f00",
+                    "surface-container": "#eceef0",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#141b2c",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#c3c6d7",
+                    "inverse-surface": "#2d3133",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#575e72",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#dbe2fa",
+                    "on-secondary-container": "#5d6478",
+                    "secondary-fixed-dim": "#bfc6dd",
+                    "surface-dim": "#d8dadc",
+                    "on-surface": "#191c1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            border: none !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(25,28,30,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 font-headline" style="">Pawtect</div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-semibold">
+<a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-600 pb-1" href="#" style="">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#" style="">Features</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-colors" href="#" style="">Contact</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full hover:opacity-80 transition-all duration-300 active:scale-95" style="">Get Started</button>
+</div>
+<!-- Mobile Toggle Placeholder -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface" style="">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-6 md:px-12 py-12 md:py-24 max-w-7xl mx-auto">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low min-h-[500px] flex items-center">
+<div class="absolute inset-0 z-0">
+<img alt="Happy Pet" class="w-full h-full object-cover opacity-90" data-alt="close-up portrait of a happy golden retriever smiling in a sun-drenched green meadow with soft golden hour lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Akx3yv-mA9090hItHe030HTZdrf44GXWz2lb2IHwRVlmdlshHQQfabIxEvpBZN_Gh0xe1uECvwJ2YwK1gdbPfBBVEghSanpvYKfznL9YrA2tPuMmkPp2U0neQQms4vrnsoL4t2hrV1DV6TN1IrTduG-IOy9U1YmojMB20HOofMY1oD7hPQh2M_ihlRDFfhSpOLAafNdSgTY22xIF1E-Ga9y1mf7qPChzz1B09JWi6khhl47fNX7zl3gAWc-xfT-lKw58Z7DqERE" style="">
+<div class="absolute inset-0 bg-gradient-to-r from-on-primary-fixed/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-8 md:px-16 md:max-w-3xl">
+<h1 class="text-white font-headline text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6" style="">
+                        Our Mission: Protecting Every Tail, Paw, and Heartbeat.
+                    </h1>
+<p class="text-primary-fixed text-lg md:text-xl font-medium max-w-xl" style="">
+                        A digital sanctuary dedicated to the health, safety, and happiness of your companions.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="px-6 md:px-12 py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="flex flex-col gap-6">
+<span class="text-primary font-bold tracking-widest text-sm uppercase" style="">Our Story</span>
+<h2 class="text-on-surface font-headline text-4xl md:text-5xl font-extrabold leading-tight" style="">Founded on Trust, Safety, and Community.</h2>
+<div class="space-y-4 text-on-surface-variant text-lg leading-relaxed">
+<p class="" style="">Pawtect is a digital platform dedicated to improving the lives of stray and endangered animals. We connect people who care with those who can help, creating a community focused on rescue, treatment, and adoption.</p>
+<p class="" style="">Every day, countless animals suffer from abandonment, injuries, and lack of medical care. Currently, most rescue efforts rely on scattered social media posts, which often lead to delayed responses, poor coordination, and lack of transparency in donations.</p>
+<p class="" style=""></p><p data-end="1274" data-start="1081" class="" style="">Pawtect solves this problem by providing a centralized platform where users can report animals in need, volunteers can respond quickly, and donors can support rescue operations transparently.</p>
+<p data-end="1431" data-start="1281" class="" style="">Through Pawtect, every rescue case is tracked from start to finish — ensuring better coordination, faster response, and improved outcomes for animals.</p><p class="" style=""></p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 grid grid-cols-2 gap-4">
+<img alt="Pet Care" class="rounded-lg w-full aspect-square object-cover mt-8 shadow-xl" data-alt="lifestyle shot of a veterinarian gently examining a small white dog in a modern bright clinic setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACyFUNfAXe3ad7lcxFgnyQOuNRep_rwMf6bxjCiTkNZ7QMzWO9RVmpfXnblUzuVxAXV_TZoiGCSfynCanwU7rBm-HfdwNzQuB7TDjIhQbXkgAepGtELZym-NKsBgrv6Fj0jdgAN-KfmPy7yUh3D93xSaWuGJmgP-y-75ckhrhV7t1XKVGzO5vPj54PdP8h4PQwIItnYUwKj9KUAd0rv-dvihGB0z8sZg2Mub2bOq24Oc3oOfWrdyfA7keIto40jagMsHlX_OsmOsY" style="">
+<img alt="Pet Community" class="rounded-lg w-full aspect-square object-cover shadow-xl" data-alt="two young puppies playing joyfully in a green backyard with vibrant natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMngucL9J7D9eZaIqChrj4T5DmoUoXvckbaEDmTdLtd-Ilaa647OIrXxs6E4sPdS79vz2zxDkVNJ7biDbRyjMq-th-HfI79INKfwZ6ogIK1DF5nLHUXmQS4CXzI1gDB3Zhnl03vEZEqtl7vXrWl-2QEj0LdWV3sGSrjz4Wk6bv4B3ybEGRmESyuYBemd0FUhB-rgOSXvwqbbA3wM1bI4USlOpGYoZtH8kxc5Eo7NvZe3Z5s1BbL2D440jit0khPuqAIV5Bb-mUUMg" style="">
+</div>
+</div>
+</section>
+<!-- Core Values Section -->
+<section class="px-6 md:px-12 py-24 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-extrabold" style="">Our Core Values</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-10">
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_12px_32px_-4px_rgba(25,28,30,0.04)] hover:scale-[1.02] transition-transform duration-300 group">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl group-hover:text-white" data-icon="verified" style="">verified</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4" style="">Trustworthy Advice</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Medical-grade insights verified by leading veterinarians to ensure your pet gets only the best care.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_12px_32px_-4px_rgba(25,28,30,0.04)] hover:scale-[1.02] transition-transform duration-300 group">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl group-hover:text-white" data-icon="shield_with_heart" style="">shield_with_heart</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4" style="">Safety First</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">Real-time alerts for when animals need help or shelter</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_12px_32px_-4px_rgba(25,28,30,0.04)] hover:scale-[1.02] transition-transform duration-300 group">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl group-hover:text-white" data-icon="groups" style="">groups</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4" style="">Community Focused</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">A thriving ecosystem of animal enthusiasts helping each other build a safer world for every animal.</p>
+</div>
+</div>
+</section>
+<!-- The Team Section (Bento Style) -->
+<!-- Call to Action Section -->
+<section class="px-6 md:px-12 py-24 max-w-7xl mx-auto text-center">
+<div class="bg-surface-container-lowest rounded-xl p-12 md:p-24 shadow-[0_12px_32px_-4px_rgba(25,28,30,0.06)] flex flex-col items-center gap-8 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-32 h-32 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 right-0 w-64 h-64 bg-primary/5 rounded-full translate-x-1/3 translate-y-1/3"></div>
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold max-w-3xl leading-tight" style="">Ready to give your pet the digital protection they deserve?</h2>
+<p class="text-on-surface-variant text-xl max-w-2xl" style="">Join over 50,000 pet parents who trust Pawtect for their pet's health and safety every day.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-10 py-5 rounded-full text-lg font-bold shadow-[0_12px_32px_-4px_rgba(0,74,198,0.3)] hover:scale-105 transition-all duration-300 active:scale-95" style="">Get Started Now</button>
+<button class="bg-surface-container-highest text-on-surface px-10 py-5 rounded-full text-lg font-bold hover:opacity-80 transition-all duration-300 active:scale-95" style="">Learn More</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-slate-950 w-full rounded-t-[3rem] mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-7xl mx-auto font-['Manrope'] text-sm">
+<div class="flex flex-col gap-4 items-center md:items-start">
+<div class="text-lg font-bold text-slate-900 dark:text-slate-50 font-headline" style="">Pawtect Pet Sanctuary</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-xs text-center md:text-left" style="">Your pet's health and safety, digitized and protected with care.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mt-10 md:mt-0">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#" style="">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#" style="">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition-colors" href="#" style="">Cookie Policy</a>
+</div>
+<div class="mt-12 md:mt-0 text-slate-500 dark:text-slate-400 text-center" style="">
+                © 2024 Pawtect Pet Sanctuary. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
